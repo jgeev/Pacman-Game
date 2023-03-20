@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>Pacmen</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <style>
+      .canvas {
+        background-color: aquamarine;
+        width: 1500px;
+        height: 600px;
+      }
+    </style>
+  </head>
+  <!-- <script src="./pacmen.js"></script> -->
+
+  <body>
+    <div class="container">
+      <div>
+        <h2>A Pacman Game</h2>
+        <small class="text-muted">
+          Hit the Add button to add pacman, hit the start button to move the
+          pacman. Once pacman reaches the edge of the canvas it bounces back and
+          moves in reverse direction.
+        </small>
+      </div>
+      <div class="row">
+        <div class="col col-6 text-center">
+          <button class="btn btn-primary" onclick="makeOne()">
+            Add PacMan
+          </button>
+        </div>
+        <div class="col col-6 text-center">
+          <button class="btn btn-success" onclick="update()">Start Game</button>
+        </div>
+
+        <div id="canvas" class="canvas">
+          <div id="game"></div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./pacmenBacknForth.js"></script>
+  </body>
+</html>
