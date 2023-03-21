@@ -2,9 +2,12 @@
 <div class="container">
       <div>
         <h2>A Pacman Game</h2>
-        <small class="text-muted">
+            <h3> This game allows to add pacmen and moves it within the canvas on game start. </h3>
+            <h4> Steps to play </h4>   
+        <h5 style="font:red">
           Hit the Add button to add pacman, hit the start button to move the
           pacman. Once pacman reaches the edge of the canvas it bounces back and
           moves in reverse direction.
-        </small>
+        </h5>
       </div>
+      <img src="pacman.png" width ="400px"/>
