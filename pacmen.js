@@ -9,9 +9,6 @@ let focus = 0;
 
 let canvasElement = document.getElementById("canvas");
 
-/* const canvasWidth = canvasElement.width;
-const canvasHeight = canvasElement.height; */
-
 // This function returns an object with random values
 function setToRandom(scale) {
   let x = Math.random() * scale;
@@ -40,10 +37,10 @@ function makePac() {
   newimg.src = "./images/PacMan1.png";
   newimg.width = 100;
 
-  // TODO: set position here
+  // set position here
   newimg.style.left = position.x;
   newimg.style.top = position.y;
-  // TODO add new Child image to game
+  // add new Child image to game
   game.appendChild(newimg);
 
   // return details in an object
@@ -55,7 +52,7 @@ function makePac() {
 }
 
 function update() {
-  // loop over pacmen array and move each one and move image in DOM
+  // loop over pacmen array and move each image in DOM
   pacMen.forEach((item) => {
     direction = checkCollisions(item, direction);
     focus = (focus + 1) % 2;
@@ -71,7 +68,7 @@ function update() {
 }
 
 function checkCollisions(item, direction) {
-  // TODO: detect collision with all walls and make pacman bounce
+  // detect collision with all walls and make pacman bounce
   {
     if (
       direction == 0 &&
@@ -114,5 +111,5 @@ function checkCollisions(item, direction) {
 function makeOne() {
   pacMen.push(makePac()); // add a new PacMan
 }
-//don't change this line
+
 //module.exports = { checkCollisions, update, pacMen };
